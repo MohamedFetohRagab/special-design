@@ -68,16 +68,15 @@ if (localStorage.getItem("background") !== null) {
   }
 }
 
-RandomImgs();
 function RandomImgs() {
   if (backopt === true) {
     backgroundInterval = setInterval(() => {
-      landing.style.backgroundImage = `url(../imgs/img${i++}.jpg)`;
+      landing.style.backgroundImage = `url("../imgs/img${i++}.jpg")`;
       if (i === 6) i = 1;
     }, 8000);
   }
 }
-
+RandomImgs();
 bgbtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.target.parentElement.querySelectorAll(".active").forEach((el) => {
@@ -121,7 +120,7 @@ let spans = document.querySelectorAll(".skills div span");
 window.onscroll = function () {
   if (
     window.pageYOffset >
-    skills.offsetTop + skills.offsetHeight - this.innerHeight
+    skills.offsetTop + skills.offsetHeight - window.innerHeight
   ) {
     spans.forEach((span) => {
       span.style.width = span.dataset.width;

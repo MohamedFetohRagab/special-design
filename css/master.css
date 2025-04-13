@@ -5,8 +5,8 @@ body {
 :root {
   --main-color: #ff5722;
   --main-color2: #4caf50;
-  --main-color3: #f44336;
-  --main-color4: #ff9800;
+  --main-color3: #1e2761;
+  --main-color4: #ffbb00;
   --main-color5: #2196f3;
 }
 * {
@@ -17,7 +17,7 @@ body {
   min-height: 100dvh;
   background-size: cover;
   transition: 0.4s;
-  background-image: url(../imgs/img1.jpg);
+  background-image: url("../imgs/img1.jpg");
 }
 .landing::before {
   position: absolute;
