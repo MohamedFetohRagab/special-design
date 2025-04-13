@@ -71,7 +71,7 @@ if (localStorage.getItem("background") !== null) {
 function RandomImgs() {
   if (backopt === true) {
     backgroundInterval = setInterval(() => {
-      landing.style.backgroundImage = `url("../imgs/img${i++}.jpg")`;
+      landing.style.backgroundImage = `/special-design/imgs/img${i++}jpg")`;
       if (i === 6) i = 1;
     }, 8000);
   }
