@@ -103,6 +103,7 @@ body {
     align-items: center;
     background-color: #dddddd60;
     border-radius: 6px;
+    z-index: 10;
   }
   .header ul li {
     padding: 10px;
@@ -584,6 +585,8 @@ body {
   padding: 20px;
   background-color: white;
   width: 350px;
+  box-shadow: 1px 1px 20px 1px rgba(10, 50, 60, 0.5),
+    -1px -1px 20px 1px rgba(255, 0, 0, 0.5);
 }
 .testimonials .box p {
   line-height: 1.7;
